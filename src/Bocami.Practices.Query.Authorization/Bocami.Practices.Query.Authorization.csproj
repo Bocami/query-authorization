@@ -30,7 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bocami.Practices.Authorization, Version=1.0.5312.38361, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Bocami.Practices.Authorization, Version=1.0.5313.22185, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Bocami.Practices.Authorization.1.0.0\lib\net45\Bocami.Practices.Authorization.dll</HintPath>
     </Reference>
