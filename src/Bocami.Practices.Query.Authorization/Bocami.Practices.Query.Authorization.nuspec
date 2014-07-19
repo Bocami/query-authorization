@@ -12,10 +12,5 @@
     <description>Query Authorization</description>
     <copyright>Copyright 2014</copyright>
     <tags>Command Query Separation</tags>
-    <dependencies>
-      <dependency id="Bocami.Practices.Query" version="1.0" />
-      <dependency id="Bocami.Practices.Authorization" version="1.0" />
-      <dependency id="Bocami.Practices.DecoratorPattern" version="1.0" />
-    </dependencies>
   </metadata>
 </package>

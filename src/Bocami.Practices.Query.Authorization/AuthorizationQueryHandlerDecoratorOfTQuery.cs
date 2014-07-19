@@ -1,4 +1,5 @@
-﻿using Bocami.Practices.DecoratorPattern;
+﻿using System;
+using Bocami.Practices.Decorator;
 
 namespace Bocami.Practices.Query.Authorization
 {
@@ -11,6 +12,12 @@ namespace Bocami.Practices.Query.Authorization
 
         protected AuthorizationQueryHandlerDecorator(IQueryHandler<TQuery, TQueryResult> queryHandler, IQueryAuthorizer<TQuery> queryAuthorizer)
         {
+            if (queryHandler == null)
+                throw new ArgumentNullException("queryHandler");
+
+            if (queryAuthorizer == null)
+                throw new ArgumentNullException("queryAuthorizer");
+
             this.queryHandler = queryHandler;
             this.queryAuthorizer = queryAuthorizer;
         }
