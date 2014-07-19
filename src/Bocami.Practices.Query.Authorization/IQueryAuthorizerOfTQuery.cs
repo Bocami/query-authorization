@@ -3,7 +3,7 @@
 namespace Bocami.Practices.Query.Authorization
 {
     public interface IQueryAuthorizer<in TQuery> : IAuthorizer<TQuery>
-        where TQuery : class, IQuery
+        where TQuery : IQuery
     {
     }
 }

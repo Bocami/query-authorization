@@ -4,8 +4,8 @@ using Bocami.Practices.Decorator;
 namespace Bocami.Practices.Query.Authorization
 {
     public class AuthorizationQueryHandlerDecorator<TQuery, TQueryResult> : IQueryHandler<TQuery, TQueryResult>, IDecorator<IQueryHandler<TQuery, TQueryResult>>
-        where TQuery : class, IQuery
-        where TQueryResult : class, IQueryResult
+        where TQuery : IQuery
+        where TQueryResult : IQueryResult
     {
         private readonly IQueryHandler<TQuery, TQueryResult> queryHandler;
         private readonly IQueryAuthorizer<TQuery> queryAuthorizer;
